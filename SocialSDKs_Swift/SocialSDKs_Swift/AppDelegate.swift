@@ -42,5 +42,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        guard let vc = self.window?.rootViewController as? ViewController else { return true }
+        return vc.handle(url: url, options: options)
+    }
 }
 
