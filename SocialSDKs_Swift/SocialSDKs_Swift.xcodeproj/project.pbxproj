@@ -26,7 +26,7 @@
 		0A4BBB77226078C500137E33 /* Weibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4BBB522260738F00137E33 /* Weibo.framework */; };
 		0A4BBB78226078C500137E33 /* Weibo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4BBB522260738F00137E33 /* Weibo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0A4BBB7B226078D500137E33 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BBB652260741100137E33 /* WeiboSDK.bundle */; };
-		0A4BBB7E22607B8E00137E33 /* WeiboSDK_Test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BBB7D22607B8E00137E33 /* WeiboSDK_Test.jpg */; };
+		0A4BBB7E22607B8E00137E33 /* Test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BBB7D22607B8E00137E33 /* Test.jpg */; };
 		0AFFA15622602A570030ACAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFFA15522602A570030ACAB /* AppDelegate.swift */; };
 		0AFFA15822602A570030ACAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFFA15722602A570030ACAB /* ViewController.swift */; };
 		0AFFA15B22602A570030ACAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AFFA15922602A570030ACAB /* Main.storyboard */; };
@@ -111,7 +111,7 @@
 		0A4BBB6D2260770000137E33 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		0A4BBB6F2260770D00137E33 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0A4BBB732260773900137E33 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
-		0A4BBB7D22607B8E00137E33 /* WeiboSDK_Test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WeiboSDK_Test.jpg; sourceTree = "<group>"; };
+		0A4BBB7D22607B8E00137E33 /* Test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Test.jpg; sourceTree = "<group>"; };
 		0AFFA15222602A570030ACAB /* SocialSDKs_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialSDKs_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFFA15522602A570030ACAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AFFA15722602A570030ACAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -255,7 +255,7 @@
 		0AFFA15422602A570030ACAB /* SocialSDKs_Swift */ = {
 			isa = PBXGroup;
 			children = (
-				0A4BBB7D22607B8E00137E33 /* WeiboSDK_Test.jpg */,
+				0A4BBB7D22607B8E00137E33 /* Test.jpg */,
 				0AFFA15522602A570030ACAB /* AppDelegate.swift */,
 				0AFFA15722602A570030ACAB /* ViewController.swift */,
 				0AFFA15922602A570030ACAB /* Main.storyboard */,
@@ -486,7 +486,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A4BBB7E22607B8E00137E33 /* WeiboSDK_Test.jpg in Resources */,
+				0A4BBB7E22607B8E00137E33 /* Test.jpg in Resources */,
 				0AFFA16022602A580030ACAB /* LaunchScreen.storyboard in Resources */,
 				0AFFA15D22602A580030ACAB /* Assets.xcassets in Resources */,
 				0AFFA15B22602A570030ACAB /* Main.storyboard in Resources */,

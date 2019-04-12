@@ -69,7 +69,7 @@ class ViewController: UIViewController {
         case .weibo:
             let msgObj = WBMessageObject()
             msgObj.text = "测试测试测试"
-            if let image = UIImage(named: "WeiboSDK_Test.jpg"),
+            if let image = UIImage(named: "Test.jpg"),
                 let imageData = image.jpegData(compressionQuality: 0.8) {
                 let imageObj = WBImageObject()
                 imageObj.imageData = imageData
