@@ -29,6 +29,23 @@
 		0AFFA19522602F030030ACAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFA19422602F030030ACAB /* UIKit.framework */; };
 		0AFFA196226035E30030ACAB /* WeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFA16C22602C090030ACAB /* WeChat.framework */; };
 		0AFFA197226035E30030ACAB /* WeChat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFA16C22602C090030ACAB /* WeChat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0AFFA1A4226037DD0030ACAB /* ReducedWeChat.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFFA1A2226037DD0030ACAB /* ReducedWeChat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AFFA1A7226037DD0030ACAB /* ReducedWeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFA1A0226037DD0030ACAB /* ReducedWeChat.framework */; };
+		0AFFA1A8226037DD0030ACAB /* ReducedWeChat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFA1A0226037DD0030ACAB /* ReducedWeChat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0AFFA1B0226038070030ACAB /* WXApiObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFFA1AC226038070030ACAB /* WXApiObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AFFA1B1226038070030ACAB /* WXApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFFA1AD226038070030ACAB /* WXApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AFFA1B2226038070030ACAB /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFA1AE226038070030ACAB /* libWeChatSDK.a */; };
+		0AFFA1B3226038070030ACAB /* WechatAuthSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFFA1AF226038070030ACAB /* WechatAuthSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AFFA1B4226038850030ACAB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFA18222602E6B0030ACAB /* libz.tbd */; };
+		0AFFA1B52260388E0030ACAB /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFA18622602E7E0030ACAB /* libsqlite3.0.tbd */; };
+		0AFFA1B6226038970030ACAB /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFA18422602E740030ACAB /* libc++.tbd */; };
+		0AFFA1B7226038A30030ACAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFA18822602E990030ACAB /* CoreGraphics.framework */; };
+		0AFFA1B8226038AD0030ACAB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFA18C22602EDD0030ACAB /* CoreTelephony.framework */; };
+		0AFFA1B9226038B70030ACAB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFA19022602EEF0030ACAB /* SystemConfiguration.framework */; };
+		0AFFA1BA226038BD0030ACAB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFA18A22602ED30030ACAB /* CFNetwork.framework */; };
+		0AFFA1BB226039390030ACAB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFA18E22602EE80030ACAB /* Security.framework */; };
+		0AFFA1BC226039450030ACAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFA19222602EF50030ACAB /* Foundation.framework */; };
+		0AFFA1BD2260394B0030ACAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFA19422602F030030ACAB /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +55,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0AFFA16B22602C090030ACAB;
 			remoteInfo = WeChat;
+		};
+		0AFFA1A5226037DD0030ACAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AFFA14A22602A570030ACAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AFFA19F226037DD0030ACAB;
+			remoteInfo = ReducedWeChat;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -49,6 +73,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				0AFFA197226035E30030ACAB /* WeChat.framework in Embed Frameworks */,
+				0AFFA1A8226037DD0030ACAB /* ReducedWeChat.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,6 +105,13 @@
 		0AFFA19022602EEF0030ACAB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0AFFA19222602EF50030ACAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0AFFA19422602F030030ACAB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0AFFA1A0226037DD0030ACAB /* ReducedWeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReducedWeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AFFA1A2226037DD0030ACAB /* ReducedWeChat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReducedWeChat.h; sourceTree = "<group>"; };
+		0AFFA1A3226037DD0030ACAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AFFA1AC226038070030ACAB /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		0AFFA1AD226038070030ACAB /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		0AFFA1AE226038070030ACAB /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		0AFFA1AF226038070030ACAB /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +120,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AFFA196226035E30030ACAB /* WeChat.framework in Frameworks */,
+				0AFFA1A7226037DD0030ACAB /* ReducedWeChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +142,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0AFFA19D226037DD0030ACAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AFFA1BD2260394B0030ACAB /* UIKit.framework in Frameworks */,
+				0AFFA1BC226039450030ACAB /* Foundation.framework in Frameworks */,
+				0AFFA1BB226039390030ACAB /* Security.framework in Frameworks */,
+				0AFFA1BA226038BD0030ACAB /* CFNetwork.framework in Frameworks */,
+				0AFFA1B9226038B70030ACAB /* SystemConfiguration.framework in Frameworks */,
+				0AFFA1B8226038AD0030ACAB /* CoreTelephony.framework in Frameworks */,
+				0AFFA1B7226038A30030ACAB /* CoreGraphics.framework in Frameworks */,
+				0AFFA1B6226038970030ACAB /* libc++.tbd in Frameworks */,
+				0AFFA1B52260388E0030ACAB /* libsqlite3.0.tbd in Frameworks */,
+				0AFFA1B4226038850030ACAB /* libz.tbd in Frameworks */,
+				0AFFA1B2226038070030ACAB /* libWeChatSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -117,6 +168,7 @@
 			children = (
 				0AFFA15422602A570030ACAB /* SocialSDKs_Swift */,
 				0AFFA16D22602C090030ACAB /* WeChat */,
+				0AFFA1A1226037DD0030ACAB /* ReducedWeChat */,
 				0AFFA15322602A570030ACAB /* Products */,
 				0AFFA18122602E6B0030ACAB /* Frameworks */,
 			);
@@ -127,6 +179,7 @@
 			children = (
 				0AFFA15222602A570030ACAB /* SocialSDKs_Swift.app */,
 				0AFFA16C22602C090030ACAB /* WeChat.framework */,
+				0AFFA1A0226037DD0030ACAB /* ReducedWeChat.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,6 +227,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		0AFFA1A1226037DD0030ACAB /* ReducedWeChat */ = {
+			isa = PBXGroup;
+			children = (
+				0AFFA1AE226038070030ACAB /* libWeChatSDK.a */,
+				0AFFA1AF226038070030ACAB /* WechatAuthSDK.h */,
+				0AFFA1AD226038070030ACAB /* WXApi.h */,
+				0AFFA1AC226038070030ACAB /* WXApiObject.h */,
+				0AFFA1A2226037DD0030ACAB /* ReducedWeChat.h */,
+				0AFFA1A3226037DD0030ACAB /* Info.plist */,
+			);
+			path = ReducedWeChat;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -185,6 +251,17 @@
 				0AFFA17022602C090030ACAB /* WeChat.h in Headers */,
 				0AFFA17E22602CBD0030ACAB /* WechatAuthSDK.h in Headers */,
 				0AFFA18022602CBD0030ACAB /* WXApiObject.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AFFA19B226037DD0030ACAB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AFFA1B1226038070030ACAB /* WXApi.h in Headers */,
+				0AFFA1B3226038070030ACAB /* WechatAuthSDK.h in Headers */,
+				0AFFA1A4226037DD0030ACAB /* ReducedWeChat.h in Headers */,
+				0AFFA1B0226038070030ACAB /* WXApiObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +281,7 @@
 			);
 			dependencies = (
 				0AFFA199226035E30030ACAB /* PBXTargetDependency */,
+				0AFFA1A6226037DD0030ACAB /* PBXTargetDependency */,
 			);
 			name = SocialSDKs_Swift;
 			productName = SocialSDKs_Swift;
@@ -228,6 +306,24 @@
 			productReference = 0AFFA16C22602C090030ACAB /* WeChat.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		0AFFA19F226037DD0030ACAB /* ReducedWeChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AFFA1A9226037DD0030ACAB /* Build configuration list for PBXNativeTarget "ReducedWeChat" */;
+			buildPhases = (
+				0AFFA19B226037DD0030ACAB /* Headers */,
+				0AFFA19C226037DD0030ACAB /* Sources */,
+				0AFFA19D226037DD0030ACAB /* Frameworks */,
+				0AFFA19E226037DD0030ACAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReducedWeChat;
+			productName = ReducedWeChat;
+			productReference = 0AFFA1A0226037DD0030ACAB /* ReducedWeChat.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -242,6 +338,9 @@
 						CreatedOnToolsVersion = 10.2;
 					};
 					0AFFA16B22602C090030ACAB = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					0AFFA19F226037DD0030ACAB = {
 						CreatedOnToolsVersion = 10.2;
 					};
 				};
@@ -261,6 +360,7 @@
 			targets = (
 				0AFFA15122602A570030ACAB /* SocialSDKs_Swift */,
 				0AFFA16B22602C090030ACAB /* WeChat */,
+				0AFFA19F226037DD0030ACAB /* ReducedWeChat */,
 			);
 		};
 /* End PBXProject section */
@@ -277,6 +377,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0AFFA16A22602C090030ACAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AFFA19E226037DD0030ACAB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -302,6 +409,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0AFFA19C226037DD0030ACAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -309,6 +423,11 @@
 			isa = PBXTargetDependency;
 			target = 0AFFA16B22602C090030ACAB /* WeChat */;
 			targetProxy = 0AFFA198226035E30030ACAB /* PBXContainerItemProxy */;
+		};
+		0AFFA1A6226037DD0030ACAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AFFA19F226037DD0030ACAB /* ReducedWeChat */;
+			targetProxy = 0AFFA1A5226037DD0030ACAB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -507,7 +626,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WeChat",
 				);
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.wessonwu.WeChat;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -541,8 +663,85 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WeChat",
 				);
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.wessonwu.WeChat;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0AFFA1AA226037DD0030ACAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = S5VDKR9N5R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ReducedWeChat/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ReducedWeChat",
+				);
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.wessonwu.ReducedWeChat;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0AFFA1AB226037DD0030ACAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = S5VDKR9N5R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ReducedWeChat/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ReducedWeChat",
+				);
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.wessonwu.ReducedWeChat;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -578,6 +777,15 @@
 			buildConfigurations = (
 				0AFFA17622602C090030ACAB /* Debug */,
 				0AFFA17722602C090030ACAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AFFA1A9226037DD0030ACAB /* Build configuration list for PBXNativeTarget "ReducedWeChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AFFA1AA226037DD0030ACAB /* Debug */,
+				0AFFA1AB226037DD0030ACAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

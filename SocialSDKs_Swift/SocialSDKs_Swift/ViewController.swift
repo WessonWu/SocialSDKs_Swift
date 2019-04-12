@@ -7,7 +7,8 @@
 //
 
 import UIKit
-import WeChat
+//import WeChat
+import ReducedWeChat
 
 let kWeChatAppID = "wx9a22b1fd277b0f0c"
 let kQQAppID = "101427822"
