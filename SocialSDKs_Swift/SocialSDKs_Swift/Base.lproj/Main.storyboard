@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,56 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SocialSDKs_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jpo-WK-jWL">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="gRj-zC-JJD">
+                                        <rect key="frame" x="0.0" y="16" width="414" height="72"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mik-ig-thv">
+                                                <rect key="frame" x="176" y="0.0" width="62" height="30"/>
+                                                <state key="normal" title="打开微信"/>
+                                                <connections>
+                                                    <action selector="openSocialApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sti-dL-esT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w55-rg-Wqb">
+                                                <rect key="frame" x="168.5" y="42" width="77" height="30"/>
+                                                <state key="normal" title="分享到微信"/>
+                                                <connections>
+                                                    <action selector="shareToSocialApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fJw-Ln-DtY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gRj-zC-JJD" firstAttribute="top" secondItem="jpo-WK-jWL" secondAttribute="top" constant="16" id="Gh7-JF-9UI"/>
+                                    <constraint firstItem="gRj-zC-JJD" firstAttribute="leading" secondItem="jpo-WK-jWL" secondAttribute="leading" id="M6b-W9-KVP"/>
+                                    <constraint firstAttribute="bottom" secondItem="gRj-zC-JJD" secondAttribute="bottom" constant="16" id="POq-u3-X7s"/>
+                                    <constraint firstAttribute="trailing" secondItem="gRj-zC-JJD" secondAttribute="trailing" id="hMt-pF-2s4"/>
+                                    <constraint firstItem="gRj-zC-JJD" firstAttribute="width" secondItem="jpo-WK-jWL" secondAttribute="width" id="xit-FZ-YKl"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jpo-WK-jWL" secondAttribute="trailing" id="JEd-dO-B4X"/>
+                            <constraint firstItem="jpo-WK-jWL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zs3-v4-szu"/>
+                            <constraint firstItem="jpo-WK-jWL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pU9-fW-Emc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jpo-WK-jWL" secondAttribute="bottom" id="y8w-wX-yka"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="135.9375"/>
         </scene>
     </scenes>
 </document>
