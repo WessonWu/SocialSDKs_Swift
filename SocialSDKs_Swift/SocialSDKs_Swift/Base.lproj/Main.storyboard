@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="gRj-zC-JJD">
-                                        <rect key="frame" x="0.0" y="16" width="414" height="156"/>
+                                        <rect key="frame" x="0.0" y="16" width="414" height="240"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mik-ig-thv">
                                                 <rect key="frame" x="176" y="0.0" width="62" height="30"/>
@@ -50,6 +50,20 @@
                                                 <state key="normal" title="分享到微博"/>
                                                 <connections>
                                                     <action selector="shareToSocialApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KSO-g4-IJw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6i-1X-7aj">
+                                                <rect key="frame" x="180" y="168" width="54" height="30"/>
+                                                <state key="normal" title="打开QQ"/>
+                                                <connections>
+                                                    <action selector="openSocialApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ul8-Wg-EGC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="my3-He-UfQ">
+                                                <rect key="frame" x="172.5" y="210" width="69" height="30"/>
+                                                <state key="normal" title="分享到QQ"/>
+                                                <connections>
+                                                    <action selector="shareToSocialApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pV8-Aw-1hw"/>
                                                 </connections>
                                             </button>
                                         </subviews>
