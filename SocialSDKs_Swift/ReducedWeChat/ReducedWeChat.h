@@ -14,8 +14,8 @@ FOUNDATION_EXPORT double ReducedWeChatVersionNumber;
 //! Project version string for ReducedWeChat.
 FOUNDATION_EXPORT const unsigned char ReducedWeChatVersionString[];
 
-#import <WeChat/WXApi.h>
-#import <WeChat/WXApiObject.h>
-#import <WeChat/WechatAuthSDK.h>
+#import <ReducedWeChat/WXApi.h>
+#import <ReducedWeChat/WXApiObject.h>
+#import <ReducedWeChat/WechatAuthSDK.h>
 
 
