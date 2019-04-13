@@ -10,6 +10,7 @@ import UIKit
 //import WeChat
 import ReducedWeChat
 import Weibo
+import TencentOpenAPI
 
 let kWeChatAppID = "wx9a22b1fd277b0f0c"
 let kQQAppID = "101427822"
@@ -19,29 +20,43 @@ enum SocialPlatform: Int {
     case unknown = 0
     case wechat = 1
     case weibo = 2
+    case qq = 3
 }
 
 class ViewController: UIViewController {
     
     var platform: SocialPlatform = .unknown
     
+    var oauth: TencentOAuth?
+    
+    lazy var wechatHandler: WeChatHandler = WeChatHandler()
+    lazy var weiboHandler: WeiboHandler = WeiboHandler()
+    lazy var qqHandler: TencentOpenAPIHandler = TencentOpenAPIHandler()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        WXApi.startLog(by: .detail, logDelegate: self)
+        WXApi.startLog(by: .detail, logDelegate: WeChatHandler())
         WXApi.registerApp(kWeChatAppID)
         
         WeiboSDK.enableDebugMode(true)
         WeiboSDK.registerApp(kWeiboAppID)
+        
+        self.oauth = TencentOAuth(appId: kQQAppID, andDelegate: qqHandler)
     }
     
     
     func handle(url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
         switch platform {
         case .unknown: return true
-        case .wechat: return WXApi.handleOpen(url, delegate: self)
-        case .weibo: return WeiboSDK.handleOpen(url, delegate: self)
+        case .wechat: return WXApi.handleOpen(url, delegate: self.wechatHandler)
+        case .weibo: return WeiboSDK.handleOpen(url, delegate: self.weiboHandler)
+        case .qq:
+            let success = QQApiInterface.handleOpen(url, delegate: self.qqHandler)
+            if TencentOAuth.canHandleOpen(url) {
+                return TencentOAuth.handleOpen(url)
+            }
+            return success
         }
     }
     
@@ -51,6 +66,7 @@ class ViewController: UIViewController {
         switch platform {
         case .wechat: WXApi.openWXApp()
         case .weibo: WeiboSDK.openWeiboApp()
+        case .qq: QQApiInterface.openQQ()
         default: break
         }
     }
@@ -78,18 +94,24 @@ class ViewController: UIViewController {
             let sendMsgRequest = WBSendMessageToWeiboRequest()
             sendMsgRequest.message = msgObj
             WeiboSDK.send(sendMsgRequest)
+        case .qq:
+            let textObj = QQApiTextObject(text: "QQ互联测试")
+            let req = SendMessageToQQReq(content: textObj)
+            QQApiInterface.send(req)
         default: break
         }
     }
 }
 
-extension ViewController: WXApiLogDelegate {
+final class WeChatHandler: NSObject, WXApiLogDelegate, WXApiDelegate {
+    // MARK - WXApiLogDelegate
     func onLog(_ log: String, logLevel level: WXLogLevel) {
         print("Level(\(level)): \(log)")
     }
-}
-
-extension ViewController: WXApiDelegate {
+    
+    // MARK - WXApiDelegate
+    func onReq(_ req: BaseReq) { }
+    
     func onResp(_ resp: BaseResp) {
         switch WXErrCode(resp.errCode) {
         case WXSuccess: print("分享到微信成功")
@@ -101,10 +123,8 @@ extension ViewController: WXApiDelegate {
 }
 
 
-extension ViewController: WeiboSDKDelegate {
-    func didReceiveWeiboRequest(_ request: WBBaseRequest!) {
-        
-    }
+final class WeiboHandler: NSObject, WeiboSDKDelegate {
+    func didReceiveWeiboRequest(_ request: WBBaseRequest!) { }
     
     func didReceiveWeiboResponse(_ response: WBBaseResponse!) {
         guard let resp = response as? WBSendMessageToWeiboResponse else { return }
@@ -114,5 +134,39 @@ extension ViewController: WeiboSDKDelegate {
         case .sentFail: print("分享失败")
         default: break
         }
+    }
+}
+
+final class TencentOpenAPIHandler: NSObject, TencentSessionDelegate, QQApiInterfaceDelegate {
+    // MARK - TencentSessionDelegate
+    func tencentDidLogin() {
+        
+    }
+    
+    func tencentDidNotLogin(_ cancelled: Bool) {
+        
+    }
+    
+    func tencentDidNotNetWork() {
+        
+    }
+    
+    // MARK - QQApiInterfaceDelegate
+    func onReq(_ req: QQBaseReq!) {
+        
+    }
+    
+    func onResp(_ resp: QQBaseResp!) {
+        guard let result = resp.result,
+            let code = Int32(result) else { return }
+        switch code {
+        case 0: print("发送到QQ成功")
+        case -4: print("发送到QQ取消")
+        default: print("发送到QQ失败")
+        }
+    }
+    
+    func isOnlineResponse(_ response: [AnyHashable : Any]!) {
+        print(response ?? [:])
     }
 }
