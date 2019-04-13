@@ -126,6 +126,7 @@
 		0A4BBB6F2260770D00137E33 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0A4BBB732260773900137E33 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		0A4BBB7D22607B8E00137E33 /* Test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Test.jpg; sourceTree = "<group>"; };
+		0A5584592262293C00B45044 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 		0AFFA15222602A570030ACAB /* SocialSDKs_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialSDKs_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFFA15522602A570030ACAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AFFA15722602A570030ACAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -243,6 +244,14 @@
 			path = Weibo;
 			sourceTree = "<group>";
 		};
+		0A5584582262293C00B45044 /* TencentOpenAPI */ = {
+			isa = PBXGroup;
+			children = (
+				0A5584592262293C00B45044 /* TencentOpenAPI.framework */,
+			);
+			path = TencentOpenAPI;
+			sourceTree = "<group>";
+		};
 		0AFFA14922602A570030ACAB = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +260,7 @@
 				0AFFA16D22602C090030ACAB /* WeChat */,
 				0AFFA1A1226037DD0030ACAB /* ReducedWeChat */,
 				0A4BBB532260738F00137E33 /* Weibo */,
+				0A5584582262293C00B45044 /* TencentOpenAPI */,
 				0AFFA15322602A570030ACAB /* Products */,
 				0AFFA18122602E6B0030ACAB /* Frameworks */,
 			);
