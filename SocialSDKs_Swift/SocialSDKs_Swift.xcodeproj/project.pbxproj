@@ -6,6 +6,19 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		0A55844822621F8C00B45044 /* TencentOpenAPI */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0A55844B22621F8C00B45044 /* Build configuration list for PBXAggregateTarget "TencentOpenAPI" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = TencentOpenAPI;
+			productName = TencentOpenAPI;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		0A4BBB562260738F00137E33 /* Weibo.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A4BBB542260738F00137E33 /* Weibo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A4BBB622260740600137E33 /* WeiboSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A4BBB5F2260740600137E33 /* WeiboSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,6 +40,7 @@
 		0A4BBB78226078C500137E33 /* Weibo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4BBB522260738F00137E33 /* Weibo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0A4BBB7B226078D500137E33 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BBB652260741100137E33 /* WeiboSDK.bundle */; };
 		0A4BBB7E22607B8E00137E33 /* Test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BBB7D22607B8E00137E33 /* Test.jpg */; };
+		0A55844C226220E500B45044 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFA19022602EEF0030ACAB /* SystemConfiguration.framework */; };
 		0AFFA15622602A570030ACAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFFA15522602A570030ACAB /* AppDelegate.swift */; };
 		0AFFA15822602A570030ACAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFFA15722602A570030ACAB /* ViewController.swift */; };
 		0AFFA15B22602A570030ACAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AFFA15922602A570030ACAB /* Main.storyboard */; };
@@ -171,6 +185,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A55844C226220E500B45044 /* SystemConfiguration.framework in Frameworks */,
 				0AFFA1A7226037DD0030ACAB /* ReducedWeChat.framework in Frameworks */,
 				0A4BBB77226078C500137E33 /* Weibo.framework in Frameworks */,
 			);
@@ -442,6 +457,9 @@
 					0A4BBB512260738F00137E33 = {
 						CreatedOnToolsVersion = 10.2;
 					};
+					0A55844822621F8C00B45044 = {
+						CreatedOnToolsVersion = 10.2;
+					};
 					0AFFA15122602A570030ACAB = {
 						CreatedOnToolsVersion = 10.2;
 					};
@@ -470,6 +488,7 @@
 				0AFFA16B22602C090030ACAB /* WeChat */,
 				0AFFA19F226037DD0030ACAB /* ReducedWeChat */,
 				0A4BBB512260738F00137E33 /* Weibo */,
+				0A55844822621F8C00B45044 /* TencentOpenAPI */,
 			);
 		};
 /* End PBXProject section */
@@ -703,6 +722,26 @@
 			};
 			name = Release;
 		};
+		0A55844922621F8C00B45044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5VDKR9N5R;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/TencentOpenAPI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0A55844A22621F8C00B45044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5VDKR9N5R;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/TencentOpenAPI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		0AFFA16222602A580030ACAB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -825,6 +864,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5VDKR9N5R;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/TencentOpenAPI";
 				INFOPLIST_FILE = SocialSDKs_Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -843,6 +883,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5VDKR9N5R;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/TencentOpenAPI";
 				INFOPLIST_FILE = SocialSDKs_Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1011,6 +1052,15 @@
 			buildConfigurations = (
 				0A4BBB5B2260738F00137E33 /* Debug */,
 				0A4BBB5C2260738F00137E33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A55844B22621F8C00B45044 /* Build configuration list for PBXAggregateTarget "TencentOpenAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A55844922621F8C00B45044 /* Debug */,
+				0A55844A22621F8C00B45044 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

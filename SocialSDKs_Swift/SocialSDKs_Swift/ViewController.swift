@@ -10,7 +10,7 @@ import UIKit
 //import WeChat
 import ReducedWeChat
 import Weibo
-//import TencentQQ
+import TencentOpenAPI
 
 let kWeChatAppID = "wx9a22b1fd277b0f0c"
 let kQQAppID = "101427822"
@@ -27,11 +27,11 @@ class ViewController: UIViewController {
     
     var platform: SocialPlatform = .unknown
     
-//    var oauth: TencentOAuth?
+    var oauth: TencentOAuth?
     
     lazy var wechatHandler: WeChatHandler = WeChatHandler()
     lazy var weiboHandler: WeiboHandler = WeiboHandler()
-//    lazy var qqHandler: TencentOpenAPIHandler = TencentOpenAPIHandler()
+    lazy var qqHandler: TencentOpenAPIHandler = TencentOpenAPIHandler()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         WeiboSDK.enableDebugMode(true)
         WeiboSDK.registerApp(kWeiboAppID)
         
-//        self.oauth = TencentOAuth(appId: kQQAppID, andDelegate: qqHandler)
+        self.oauth = TencentOAuth(appId: kQQAppID, andDelegate: qqHandler)
     }
     
     
@@ -51,12 +51,12 @@ class ViewController: UIViewController {
         case .unknown: return true
         case .wechat: return WXApi.handleOpen(url, delegate: self.wechatHandler)
         case .weibo: return WeiboSDK.handleOpen(url, delegate: self.weiboHandler)
-        case .qq: return true
-//            let success = QQApiInterface.handleOpen(url, delegate: self.qqHandler)
-//            if TencentOAuth.canHandleOpen(url) {
-//                return TencentOAuth.handleOpen(url)
-//            }
-//            return success
+        case .qq:
+            let success = QQApiInterface.handleOpen(url, delegate: self.qqHandler)
+            if TencentOAuth.canHandleOpen(url) {
+                return TencentOAuth.handleOpen(url)
+            }
+            return success
         }
     }
     
@@ -66,8 +66,7 @@ class ViewController: UIViewController {
         switch platform {
         case .wechat: WXApi.openWXApp()
         case .weibo: WeiboSDK.openWeiboApp()
-        case .qq: break
-//            QQApiInterface.openQQ()
+        case .qq: QQApiInterface.openQQ()
         default: break
         }
     }
@@ -96,10 +95,9 @@ class ViewController: UIViewController {
             sendMsgRequest.message = msgObj
             WeiboSDK.send(sendMsgRequest)
         case .qq:
-//            let textObj = QQApiTextObject(text: "QQ互联测试")
-//            let req = SendMessageToQQReq(content: textObj)
-//            QQApiInterface.send(req)
-            break
+            let textObj = QQApiTextObject(text: "QQ互联测试")
+            let req = SendMessageToQQReq(content: textObj)
+            QQApiInterface.send(req)
         default: break
         }
     }
@@ -139,7 +137,6 @@ final class WeiboHandler: NSObject, WeiboSDKDelegate {
     }
 }
 
-/*
 final class TencentOpenAPIHandler: NSObject, TencentSessionDelegate, QQApiInterfaceDelegate {
     // MARK - TencentSessionDelegate
     func tencentDidLogin() {
@@ -160,11 +157,16 @@ final class TencentOpenAPIHandler: NSObject, TencentSessionDelegate, QQApiInterf
     }
     
     func onResp(_ resp: QQBaseResp!) {
-        print(resp.result)
+        guard let result = resp.result,
+            let code = Int32(result) else { return }
+        switch code {
+        case 0: print("发送到QQ成功")
+        case -4: print("发送到QQ取消")
+        default: print("发送到QQ失败")
+        }
     }
     
     func isOnlineResponse(_ response: [AnyHashable : Any]!) {
         print(response ?? [:])
     }
 }
- */
