@@ -126,6 +126,7 @@
 		0A4BBB6F2260770D00137E33 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0A4BBB732260773900137E33 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		0A4BBB7D22607B8E00137E33 /* Test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Test.jpg; sourceTree = "<group>"; };
+		0A4BBC03226471BA00137E33 /* SocialSDKs_Swift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = SocialSDKs_Swift.podspec; sourceTree = "<group>"; };
 		0A5584592262293C00B45044 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 		0AFFA15222602A570030ACAB /* SocialSDKs_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialSDKs_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFFA15522602A570030ACAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -255,6 +256,7 @@
 		0AFFA14922602A570030ACAB = {
 			isa = PBXGroup;
 			children = (
+				0A4BBC03226471BA00137E33 /* SocialSDKs_Swift.podspec */,
 				0AFFA1C122605EF60030ACAB /* universal-framework.sh */,
 				0AFFA15422602A570030ACAB /* SocialSDKs_Swift */,
 				0AFFA16D22602C090030ACAB /* WeChat */,
