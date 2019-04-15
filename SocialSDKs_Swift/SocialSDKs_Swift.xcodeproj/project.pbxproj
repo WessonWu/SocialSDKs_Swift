@@ -686,6 +686,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Weibo",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.wessonwu.Weibo;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -929,6 +930,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WeChat",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-Objc",
 					"-all_load",
@@ -1003,6 +1005,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ReducedWeChat",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-Objc",
 					"-all_load",
