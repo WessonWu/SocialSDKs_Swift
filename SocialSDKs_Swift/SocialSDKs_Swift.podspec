@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
     s.name             = 'SocialSDKs_Swift'
     s.version          = '0.1.0'
-    s.summary          = '微信、QQ和微博原生SDK动态库'
+    s.summary          = '微信和微博原生SDK动态库'
     s.description      = <<-DESC
-                                微信SDK_1.8.4、QQSDK_3.3.3、微博SDK_3.2.3动态库封装
+                                微信SDK_1.8.4、微博SDK_3.2.3动态库封装
                             DESC
 
     s.homepage         = 'https://github.com/WessonWu/SocialSDKs_Swift'
@@ -22,11 +22,6 @@ Pod::Spec.new do |s|
     
     s.subspec 'WeChat' do |sp|
         sp.vendored_frameworks = 'SocialSDKs_V_0_1_0/WeChat.framework'
-    end
-    
-    s.subspec 'TencentOpenAPI' do |sp|
-        sp.frameworks = 'SystemConfiguration'
-        sp.vendored_frameworks = 'SocialSDKs_V_0_1_0/TencentOpenAPI.framework'
     end
     
     s.subspec 'Weibo' do |sp|

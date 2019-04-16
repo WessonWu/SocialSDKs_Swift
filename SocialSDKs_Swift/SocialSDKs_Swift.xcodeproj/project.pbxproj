@@ -6,19 +6,6 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		0A55844822621F8C00B45044 /* TencentOpenAPI */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 0A55844B22621F8C00B45044 /* Build configuration list for PBXAggregateTarget "TencentOpenAPI" */;
-			buildPhases = (
-			);
-			dependencies = (
-			);
-			name = TencentOpenAPI;
-			productName = TencentOpenAPI;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		0A4BBB562260738F00137E33 /* Weibo.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A4BBB542260738F00137E33 /* Weibo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A4BBB622260740600137E33 /* WeiboSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A4BBB5F2260740600137E33 /* WeiboSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,6 +28,7 @@
 		0A4BBB7B226078D500137E33 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BBB652260741100137E33 /* WeiboSDK.bundle */; };
 		0A4BBB7E22607B8E00137E33 /* Test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BBB7D22607B8E00137E33 /* Test.jpg */; };
 		0A55844C226220E500B45044 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFA19022602EEF0030ACAB /* SystemConfiguration.framework */; };
+		0AD5CF8F2265BCBC004148A6 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD5CF8E2265BCBC004148A6 /* TencentOpenAPI.framework */; };
 		0AFFA15622602A570030ACAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFFA15522602A570030ACAB /* AppDelegate.swift */; };
 		0AFFA15822602A570030ACAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFFA15722602A570030ACAB /* ViewController.swift */; };
 		0AFFA15B22602A570030ACAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AFFA15922602A570030ACAB /* Main.storyboard */; };
@@ -127,7 +115,9 @@
 		0A4BBB732260773900137E33 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		0A4BBB7D22607B8E00137E33 /* Test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Test.jpg; sourceTree = "<group>"; };
 		0A4BBC03226471BA00137E33 /* SocialSDKs_Swift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = SocialSDKs_Swift.podspec; sourceTree = "<group>"; };
-		0A5584592262293C00B45044 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		0AD5CF882265BBC7004148A6 /* libz.1.1.3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.1.3.tbd; path = usr/lib/libz.1.1.3.tbd; sourceTree = SDKROOT; };
+		0AD5CF8A2265BBD3004148A6 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		0AD5CF8E2265BCBC004148A6 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 		0AFFA15222602A570030ACAB /* SocialSDKs_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialSDKs_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFFA15522602A570030ACAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AFFA15722602A570030ACAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -188,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A55844C226220E500B45044 /* SystemConfiguration.framework in Frameworks */,
+				0AD5CF8F2265BCBC004148A6 /* TencentOpenAPI.framework in Frameworks */,
 				0AFFA1A7226037DD0030ACAB /* ReducedWeChat.framework in Frameworks */,
 				0A4BBB77226078C500137E33 /* Weibo.framework in Frameworks */,
 			);
@@ -245,14 +236,6 @@
 			path = Weibo;
 			sourceTree = "<group>";
 		};
-		0A5584582262293C00B45044 /* TencentOpenAPI */ = {
-			isa = PBXGroup;
-			children = (
-				0A5584592262293C00B45044 /* TencentOpenAPI.framework */,
-			);
-			path = TencentOpenAPI;
-			sourceTree = "<group>";
-		};
 		0AFFA14922602A570030ACAB = {
 			isa = PBXGroup;
 			children = (
@@ -262,7 +245,6 @@
 				0AFFA16D22602C090030ACAB /* WeChat */,
 				0AFFA1A1226037DD0030ACAB /* ReducedWeChat */,
 				0A4BBB532260738F00137E33 /* Weibo */,
-				0A5584582262293C00B45044 /* TencentOpenAPI */,
 				0AFFA15322602A570030ACAB /* Products */,
 				0AFFA18122602E6B0030ACAB /* Frameworks */,
 			);
@@ -282,6 +264,7 @@
 		0AFFA15422602A570030ACAB /* SocialSDKs_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				0AD5CF8E2265BCBC004148A6 /* TencentOpenAPI.framework */,
 				0A4BBB7D22607B8E00137E33 /* Test.jpg */,
 				0AFFA15522602A570030ACAB /* AppDelegate.swift */,
 				0AFFA15722602A570030ACAB /* ViewController.swift */,
@@ -309,6 +292,8 @@
 		0AFFA18122602E6B0030ACAB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0AD5CF8A2265BBD3004148A6 /* libiconv.tbd */,
+				0AD5CF882265BBC7004148A6 /* libz.1.1.3.tbd */,
 				0A4BBB732260773900137E33 /* Photos.framework */,
 				0A4BBB6F2260770D00137E33 /* QuartzCore.framework */,
 				0A4BBB6D2260770000137E33 /* ImageIO.framework */,
@@ -469,9 +454,6 @@
 					0A4BBB512260738F00137E33 = {
 						CreatedOnToolsVersion = 10.2;
 					};
-					0A55844822621F8C00B45044 = {
-						CreatedOnToolsVersion = 10.2;
-					};
 					0AFFA15122602A570030ACAB = {
 						CreatedOnToolsVersion = 10.2;
 					};
@@ -500,7 +482,6 @@
 				0AFFA16B22602C090030ACAB /* WeChat */,
 				0AFFA19F226037DD0030ACAB /* ReducedWeChat */,
 				0A4BBB512260738F00137E33 /* Weibo */,
-				0A55844822621F8C00B45044 /* TencentOpenAPI */,
 			);
 		};
 /* End PBXProject section */
@@ -735,26 +716,6 @@
 			};
 			name = Release;
 		};
-		0A55844922621F8C00B45044 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S5VDKR9N5R;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/TencentOpenAPI";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		0A55844A22621F8C00B45044 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S5VDKR9N5R;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/TencentOpenAPI";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		0AFFA16222602A580030ACAB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -877,7 +838,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5VDKR9N5R;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/TencentOpenAPI";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/SocialSDKs_Swift";
 				INFOPLIST_FILE = SocialSDKs_Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -896,7 +857,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5VDKR9N5R;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/TencentOpenAPI";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/SocialSDKs_Swift";
 				INFOPLIST_FILE = SocialSDKs_Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1067,15 +1028,6 @@
 			buildConfigurations = (
 				0A4BBB5B2260738F00137E33 /* Debug */,
 				0A4BBB5C2260738F00137E33 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0A55844B22621F8C00B45044 /* Build configuration list for PBXAggregateTarget "TencentOpenAPI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0A55844922621F8C00B45044 /* Debug */,
-				0A55844A22621F8C00B45044 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
