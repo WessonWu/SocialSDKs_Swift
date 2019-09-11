@@ -587,7 +587,7 @@ typedef void(^WXLogBolock)(NSString *log);
 @end
 
 #pragma mark - WXSubscribeMiniProgramMsg
-/** ! @brief 微信返回第三方请求选择发票结果
+/** ! @brief 第三方请求订阅小程序消息
  *
  */
 @interface WXSubscribeMiniProgramMsgReq : BaseReq
@@ -613,34 +613,6 @@ typedef void(^WXLogBolock)(NSString *log);
 #pragma mark - WXinvoiceAuthInsertResp
 
 @interface WXInvoiceAuthInsertResp : BaseResp
-
-@property (nonatomic, copy) NSString *wxOrderId;
-
-@end
-
-#pragma mark - WXNontaxPayReq
-@interface WXNontaxPayReq:BaseReq
-
-@property (nonatomic, copy) NSString *urlString;
-
-@end
-
-#pragma mark - WXNontaxPayResp
-@interface WXNontaxPayResp : BaseResp
-
-@property (nonatomic, copy) NSString *wxOrderId;
-
-@end
-
-#pragma mark - WXPayInsuranceReq
-@interface WXPayInsuranceReq : BaseReq
-
-@property (nonatomic, copy) NSString *urlString;
-
-@end
-
-#pragma mark - WXPayInsuranceResp
-@interface WXPayInsuranceResp : BaseResp
 
 @property (nonatomic, copy) NSString *wxOrderId;
 
@@ -747,6 +719,15 @@ typedef void(^WXLogBolock)(NSString *log);
  */
 @property (nonatomic, copy) NSString *musicLowBandDataUrl;
 
+/**音乐封面图Url
+ * @note 长度不能超过10K
+ */
+@property (nonatomic, copy) NSString *songAlbumUrl;
+
+/**歌词信息 LRC格式
+ * @note 长度不能超过32K
+ */
+@property (nonatomic, copy, nullable) NSString *songLyric;
 @end
 
 
@@ -989,6 +970,12 @@ typedef void(^WXLogBolock)(NSString *log);
  * @attention json格式
  */
 @property (nonatomic, copy, nullable) NSString *extMsg;
+
+/** extDic
+ * @attention 字典，可存放图片等比较大的数据
+ */
+@property (nonatomic, copy, nullable) NSDictionary *extDic;
+
 @end
 
 #pragma mark - WXLaunchMiniProgramResp
@@ -1026,6 +1013,10 @@ typedef void(^WXLogBolock)(NSString *log);
  */
 @property (nonatomic, copy, nullable) NSString *extInfo;
 
+/** extData数据
+ * @note
+ */
+@property (nonatomic, strong, nullable) NSData *extData;
 @end
 
 

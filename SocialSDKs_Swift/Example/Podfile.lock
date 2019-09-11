@@ -22,11 +22,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SocialSDKs_Swift_ReducedWeChat: 66fea94aa008a6ca3978de4abfa05324e3c9100f
+  SocialSDKs_Swift_ReducedWeChat: 5ab67a2353bad3b92bd283b9384665f7f10ed19d
   SocialSDKs_Swift_TencentQQ: 6634109b96d7d847992d9fa50baf1d3172ce7eda
   SocialSDKs_Swift_Weibo: 866e81852dcca5c56b580f7226778967f7764a9d
   SocialSDKs_Swift_WeiboSDKBundle: 22329c6b4f87c1753cccee8c8f729f865154fbc5
 
 PODFILE CHECKSUM: 34e58a656a17acbcb3d1c51a9772fe0666710cce
 
-COCOAPODS: 1.7.0
+COCOAPODS: 1.7.5
