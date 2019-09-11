@@ -22,7 +22,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SocialSDKs_Swift_TencentQQ: 6634109b96d7d847992d9fa50baf1d3172ce7eda
+  SocialSDKs_Swift_TencentQQ: 83d5b234bab9930c3c6fedf17fd40dc33e1701ea
   SocialSDKs_Swift_WeChat: b65498a5bb04158c77b62d95dffb0618fbf38cd8
   SocialSDKs_Swift_Weibo: 866e81852dcca5c56b580f7226778967f7764a9d
   SocialSDKs_Swift_WeiboSDKBundle: 22329c6b4f87c1753cccee8c8f729f865154fbc5
