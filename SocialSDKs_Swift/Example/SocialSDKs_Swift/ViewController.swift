@@ -8,7 +8,8 @@
 
 import UIKit
 //import WeChat
-import SocialSDKs_Swift_ReducedWeChat
+//import SocialSDKs_Swift_ReducedWeChat
+import SocialSDKs_Swift_WeChat
 import SocialSDKs_Swift_Weibo
 import SocialSDKs_Swift_TencentQQ
 
