@@ -173,8 +173,8 @@
 				0AFFA14F22602A570030ACAB /* Frameworks */,
 				0AFFA15022602A570030ACAB /* Resources */,
 				0AFFA19A226035E30030ACAB /* Embed Frameworks */,
-				942B9F862F332C636D4359F5 /* [CP] Embed Pods Frameworks */,
 				20380626652E78BBC0B0B2E8 /* [CP] Copy Pods Resources */,
+				496CBBABC69E06CD30D0D877 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,7 +255,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SocialSDKs_Swift/Pods-SocialSDKs_Swift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		942B9F862F332C636D4359F5 /* [CP] Embed Pods Frameworks */ = {
+		496CBBABC69E06CD30D0D877 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
