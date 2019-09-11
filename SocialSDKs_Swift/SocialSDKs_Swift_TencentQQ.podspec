@@ -5,10 +5,7 @@ Pod::Spec.new do |s|
     s.description      = '基于QQ互联SDK(V3.3.6)动态库封装 (使用UniversalLink方案进行登录分享校验)'
 
     s.homepage         = 'https://github.com/WessonWu/SocialSDKs_Swift'
-    s.license          = { :type => 'MIT', :text => <<-LICENSE
-                                Copyright (c) 2019 WessonWu <wessonwu94@gmail.com>
-                            LICENSE
-    }
+    s.license          = 'MIT'
     s.author           = { 'wessonwu' => 'wessonwu94@gmail.com' }
     s.source           = { :git => 'https://github.com/WessonWu/SocialSDKs_Swift.git',
                            :tag => s.version.to_s }
