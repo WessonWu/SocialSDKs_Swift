@@ -1,6 +1,0 @@
-framework module SocialSDKs_Swift_TencentQQ {
-    umbrella header "SocialSDKs_Swift_TencentQQ-umbrella.h"
-    
-    export *
-    module * { export * }
-}
