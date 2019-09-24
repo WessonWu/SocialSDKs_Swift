@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'SocialSDKs_Swift_Weibo'
-    s.version          = '0.1.1'
+    s.version          = '0.1.2'
     s.summary          = '微博原生SDK动态库'
     s.description      = '基于微博SDK_v3.2.4动态库封装'
 
@@ -9,6 +9,8 @@ Pod::Spec.new do |s|
     s.author           = { 'wessonwu' => 'wessonwu94@gmail.com' }
     s.source           = { :git => 'https://github.com/WessonWu/SocialSDKs_Swift.git',
                            :tag => s.version.to_s }
+    
+    s.module_name      = 'Weibo'
 
     s.ios.deployment_target = '8.0'
     s.swift_version = '5.0'

@@ -7,11 +7,10 @@
 //
 
 import UIKit
+import ReducedWeChat
 //import WeChat
-//import SocialSDKs_Swift_ReducedWeChat
-import SocialSDKs_Swift_WeChat
-import SocialSDKs_Swift_Weibo
-import SocialSDKs_Swift_TencentQQ
+import Weibo
+import TencentQQ
 
 let kWeChatAppID = "wx9a22b1fd277b0f0c"
 let kQQAppID = "101427822"
