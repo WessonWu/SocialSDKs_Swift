@@ -11,11 +11,9 @@ Pod::Spec.new do |s|
                            :tag => s.version.to_s }
 
     s.ios.deployment_target = '8.0'
-    s.swift_version = '5.0'
     
     s.frameworks = 'SystemConfiguration', 'WebKit'
     s.vendored_frameworks = 'TencentQQ/vendor/TencentOpenAPI.framework'
     
-    s.source_files = 'common/*.{h,m,swift}', 'TencentQQ/source/**/*.{h,m,swift}'
-    s.module_map = 'TencentQQ/source/module.modulemap'
+    s.source_files = 'TencentQQ/source/**/*.{h,m}'
 end
