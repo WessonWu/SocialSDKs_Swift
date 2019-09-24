@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'SocialSDKs_Swift_TencentQQ'
-    s.version          = '0.1.0'
+    s.version          = '0.1.1'
     s.summary          = 'QQ互联平台原生SDK动态库'
     s.description      = '基于QQ互联SDK(V3.3.6)动态库封装 (使用UniversalLink方案进行登录分享校验)'
 
@@ -11,10 +11,11 @@ Pod::Spec.new do |s|
                            :tag => s.version.to_s }
 
     s.ios.deployment_target = '8.0'
+    s.swift_version = '5.0'
     
     s.frameworks = 'SystemConfiguration', 'WebKit'
     s.vendored_frameworks = 'TencentQQ/vendor/TencentOpenAPI.framework'
     
-    s.source_files = 'common/*.{h,m}', 'TencentQQ/source/**/*.{h,m}'
+    s.source_files = 'common/*.{h,m,swift}', 'TencentQQ/source/**/*.{h,m,swift}'
     s.module_map = 'TencentQQ/source/module.modulemap'
 end
