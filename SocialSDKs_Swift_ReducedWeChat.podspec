@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'SocialSDKs_Swift_ReducedWeChat'
-    s.version          = '0.1.0'
+    s.version          = '0.1.1'
     s.summary          = '微信原生SDK(无支付)动态库'
     s.description      = '基于WeChatSDK1.8.5_NoPay(不包含支付功能)动态库封装'
 

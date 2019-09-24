@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'SocialSDKs_Swift_Weibo'
-    s.version          = '0.1.0'
+    s.version          = '0.1.1'
     s.summary          = '微博原生SDK动态库'
     s.description      = '基于微博SDK_v3.2.4动态库封装'
 
