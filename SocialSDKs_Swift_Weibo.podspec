@@ -11,6 +11,7 @@ Pod::Spec.new do |s|
                            :tag => s.version.to_s }
 
     s.ios.deployment_target = '8.0'
+    s.swift_version = '5.0'
     
     s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-ObjC -all_load' }
     s.frameworks   = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
