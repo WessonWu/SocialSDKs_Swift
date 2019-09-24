@@ -16,7 +16,6 @@ Pod::Spec.new do |s|
     s.frameworks = 'UIKit', 'Foundation', 'Security', 'CFNetwork', 'SystemConfiguration', 'CoreTelephony', 'CoreGraphics'
     s.libraries = 'c++', 'sqlite3.0', 'z'
     
-    s.source_files = 'common/*.{h,m}', 'ReducedWeChat/source/**/*.{h,m}'
+    s.source_files = 'common/*.{h,m,swift}', 'ReducedWeChat/source/**/*.{h,m,swift}'
     s.vendored_libraries = 'ReducedWeChat/lib/libWeChatSDK.a'
-    s.module_map = 'ReducedWeChat/source/module.modulemap'
 end

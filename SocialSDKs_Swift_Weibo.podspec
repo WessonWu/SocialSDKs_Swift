@@ -16,9 +16,8 @@ Pod::Spec.new do |s|
     s.frameworks   = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
     s.libraries = 'sqlite3', 'z'
     
-    s.source_files = 'common/*.{h,m}', 'Weibo/source/**/*.{h,m}'
+    s.source_files = 'common/*.{h,m,swift}', 'Weibo/source/**/*.{h,m,swift}'
     s.vendored_libraries = 'Weibo/lib/libWeiboSDK.a'
-    s.module_map = 'Weibo/source/module.modulemap'
 
     s.dependency 'SocialSDKs_Swift_WeiboSDKBundle', '0.1.0' # concrete version
 end

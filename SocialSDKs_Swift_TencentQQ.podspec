@@ -15,6 +15,6 @@ Pod::Spec.new do |s|
     s.frameworks = 'SystemConfiguration', 'WebKit'
     s.vendored_frameworks = 'TencentQQ/vendor/TencentOpenAPI.framework'
     
-    s.source_files = 'common/*.{h,m}', 'TencentQQ/source/**/*.{h,m}'
+    s.source_files = 'common/*.{h,m,swift}', 'TencentQQ/source/**/*.{h,m,swift}'
     s.module_map = 'TencentQQ/source/module.modulemap'
 end

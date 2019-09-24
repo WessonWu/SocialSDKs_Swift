@@ -1,20 +1,20 @@
 PODS:
-  - SocialSDKs_Swift_ReducedWeChat (0.1.0)
   - SocialSDKs_Swift_TencentQQ (0.1.0)
+  - SocialSDKs_Swift_WeChat (0.1.0)
   - SocialSDKs_Swift_Weibo (0.1.0):
     - SocialSDKs_Swift_WeiboSDKBundle (= 0.1.0)
   - SocialSDKs_Swift_WeiboSDKBundle (0.1.0)
 
 DEPENDENCIES:
-  - SocialSDKs_Swift_ReducedWeChat (from `../`)
   - SocialSDKs_Swift_TencentQQ (from `../`)
+  - SocialSDKs_Swift_WeChat (from `../`)
   - SocialSDKs_Swift_Weibo (from `../`)
   - SocialSDKs_Swift_WeiboSDKBundle (from `../`)
 
 EXTERNAL SOURCES:
-  SocialSDKs_Swift_ReducedWeChat:
-    :path: "../"
   SocialSDKs_Swift_TencentQQ:
+    :path: "../"
+  SocialSDKs_Swift_WeChat:
     :path: "../"
   SocialSDKs_Swift_Weibo:
     :path: "../"
@@ -22,11 +22,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SocialSDKs_Swift_ReducedWeChat: 0da6aaba86cc9c2d16e654fae575ccdf5efd3c83
-  SocialSDKs_Swift_TencentQQ: 9c2692c3e8806a6b43f310a3edf435db5a5d6f2a
-  SocialSDKs_Swift_Weibo: 79a613b1451cb932f3e01a723e273a2ea636f37a
+  SocialSDKs_Swift_TencentQQ: d32ccba6eec59eeb7cd24180b72dca33f5bcda62
+  SocialSDKs_Swift_WeChat: 1c351b2eaa0b28ae0018b6889bcfe73af14f7a6b
+  SocialSDKs_Swift_Weibo: 79615e52877daacccb122fc11c199498260a9757
   SocialSDKs_Swift_WeiboSDKBundle: 0eac965c9e749b3909cc8eee30be225d576e55db
 
-PODFILE CHECKSUM: 34e58a656a17acbcb3d1c51a9772fe0666710cce
+PODFILE CHECKSUM: 7d1a3302ec19c190f9f729d2bca980bae843781f
 
 COCOAPODS: 1.7.5
