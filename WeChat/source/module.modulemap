@@ -1,6 +1,0 @@
-framework module SocialSDKs_Swift_WeChat {
-    umbrella header "SocialSDKs_Swift_WeChat-umbrella.h"
-    
-    export *
-    module * { export * }
-}
